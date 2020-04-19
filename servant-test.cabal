@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 4739695aeb80a6aa7aef03d6d85bd59d4954922917d013b5dfab8ae74dee421a
+-- hash: f7b3a123c4c7c1ff6ec5beea56a21e2c5fcab9b4b4c5ccce48261e24d3ae9e89
 
 name:           servant-test
 version:        0.1.0.0
@@ -27,15 +27,25 @@ source-repository head
 
 library
   exposed-modules:
+      DataSource
       Lib
   other-modules:
       Paths_servant_test
   hs-source-dirs:
       src
   build-depends:
-      aeson
+      HDBC
+    , HDBC-postgresql
+    , aeson
     , base >=4.7 && <5
+    , bytestring
+    , persistable-record <=0.5.2.2
+    , relational-query <=0.9.5.1
+    , relational-query-HDBC <=0.6.4.6
+    , relational-schemas <=0.1.4.2
     , servant-server
+    , template-haskell
+    , time
     , wai
     , warp
   default-language: Haskell2010
@@ -48,10 +58,19 @@ executable servant-test-exe
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      aeson
+      HDBC
+    , HDBC-postgresql
+    , aeson
     , base >=4.7 && <5
+    , bytestring
+    , persistable-record <=0.5.2.2
+    , relational-query <=0.9.5.1
+    , relational-query-HDBC <=0.6.4.6
+    , relational-schemas <=0.1.4.2
     , servant-server
     , servant-test
+    , template-haskell
+    , time
     , wai
     , warp
   default-language: Haskell2010
@@ -65,13 +84,22 @@ test-suite servant-test-test
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      aeson
+      HDBC
+    , HDBC-postgresql
+    , aeson
     , base >=4.7 && <5
+    , bytestring
     , hspec
     , hspec-wai
     , hspec-wai-json
+    , persistable-record <=0.5.2.2
+    , relational-query <=0.9.5.1
+    , relational-query-HDBC <=0.6.4.6
+    , relational-schemas <=0.1.4.2
     , servant-server
     , servant-test
+    , template-haskell
+    , time
     , wai
     , warp
   default-language: Haskell2010

@@ -25,6 +25,15 @@ dependencies:
 - servant-server
 - wai
 - warp
+- relational-query <= 0.9.5.1
+- relational-query-HDBC <= 0.6.4.6
+- relational-schemas <= 0.1.4.2
+- persistable-record <= 0.5.2.2
+- HDBC
+- HDBC-postgresql
+- template-haskell
+- time
+- bytestring
 
 library:
   source-dirs: src

@@ -30,10 +30,22 @@ resolver: lts-14.27
 #   - wai
 packages:
 - .
+
 # Dependency packages to be pulled from upstream that are not in the resolver.
 # These entries can reference officially published versions as well as
 # forks / in-progress versions pinned to a git hash. For example:
 #
+extra-deps:
+  - HDBC-postgresql-2.3.2.7
+  - names-th-0.2.0.5
+  - persistable-record-0.5.2.2
+  - th-bang-compat-0.0.1.0
+  - th-constraint-compat-0.0.1.0
+  - relational-record-0.2.2.0
+  - relational-query-0.9.5.1
+  - relational-schemas-0.1.4.2
+  - relational-query-HDBC-0.6.4.6
+
 # extra-deps:
 # - acme-missiles-0.3
 # - git: https://github.com/commercialhaskell/stack.git

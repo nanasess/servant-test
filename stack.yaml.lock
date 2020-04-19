@@ -3,7 +3,70 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: HDBC-postgresql-2.3.2.7@sha256:93d8e3c3d2dc9291a10f28ae3f8d0604a55ef47298ed43003a4d16f3d9905bae,3228
+    pantry-tree:
+      size: 1740
+      sha256: 07bfba988402849f447025b324f2993ea88ac0ec4f7dd4b86942644e2e239d45
+  original:
+    hackage: HDBC-postgresql-2.3.2.7
+- completed:
+    hackage: names-th-0.2.0.5@sha256:01122451e18b96b52f415be4062948d80b98ee4388819ab60f4484f2ef955cbb,1567
+    pantry-tree:
+      size: 311
+      sha256: 1bdbdaadbd479208f9c592e93bd68f9667185e06d61353d2aebf8d0f426dbf65
+  original:
+    hackage: names-th-0.2.0.5
+- completed:
+    hackage: persistable-record-0.5.2.2@sha256:07bcf60fa280fca77c6f32e563af2a3ba1c70e76998a3c158fc82aaa1dc20c76,2721
+    pantry-tree:
+      size: 970
+      sha256: 957741d11b53e44d598fded7e0cdbe2cadda85d5dbe089092335366972bc2ed1
+  original:
+    hackage: persistable-record-0.5.2.2
+- completed:
+    hackage: th-bang-compat-0.0.1.0@sha256:b6f1493fd42f2f2732c9462ce2c857c3bf7b19ac31f75c7414ba002ff1ed4c7a,1969
+    pantry-tree:
+      size: 458
+      sha256: 1cb1a327e8fbf63b6cb7c642edcfe935be30fec10565a2a7978411b564d0dbad
+  original:
+    hackage: th-bang-compat-0.0.1.0
+- completed:
+    hackage: th-constraint-compat-0.0.1.0@sha256:97d2b8410cad6198fb0b53e3401b999494bb7d6485304f52dade1f43e5d97496,1855
+    pantry-tree:
+      size: 429
+      sha256: ddbc62d15c7df6d1735bb79672d45865992654ee419766107c9bdf54e4fb3980
+  original:
+    hackage: th-constraint-compat-0.0.1.0
+- completed:
+    hackage: relational-record-0.2.2.0@sha256:e65080b2835aa255f636510623675f31624654d209ed9dd4fdf9c07058af92ff,1221
+    pantry-tree:
+      size: 243
+      sha256: 9ee1f83bb2df4903fe03b20ebb2844d665a99dfdde677e508a4fa19d28b2c8fb
+  original:
+    hackage: relational-record-0.2.2.0
+- completed:
+    hackage: relational-query-0.9.5.1@sha256:6a58cf7be180cfee3c4edc3f36aa2db1f148cc147f472dc91367792cf50c4c7e,6517
+    pantry-tree:
+      size: 4561
+      sha256: feb34f9db16d726896309caf95eebed008957a97f7a0f9948d8d7c7e261d910b
+  original:
+    hackage: relational-query-0.9.5.1
+- completed:
+    hackage: relational-schemas-0.1.4.2@sha256:7ff9eb5cd055e91508f44b13eab29da5b4504791c554dcafa29474f389b3b26a,4365
+    pantry-tree:
+      size: 3313
+      sha256: 80c1336a1f25d335bbb772e962f74cb304be9b3255e1e11966a1a0ba42934824
+  original:
+    hackage: relational-schemas-0.1.4.2
+- completed:
+    hackage: relational-query-HDBC-0.6.4.6@sha256:9b02e3792fbd8c73071e3a4f926c60835cefb5b14163a2bc761b897ae5c22950,3738
+    pantry-tree:
+      size: 1790
+      sha256: a8fdb7f882586de5dcba1fff6708b1b24da6e64c10e5e94d4b964ca4c5e4da87
+  original:
+    hackage: relational-query-HDBC-0.6.4.6
 snapshots:
 - completed:
     size: 524996
