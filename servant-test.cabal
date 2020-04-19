@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: acffad765ca9ca608f0cc9d7c14d6225fcd6a0af28a163dbbecac55f444d2935
+-- hash: 4739695aeb80a6aa7aef03d6d85bd59d4954922917d013b5dfab8ae74dee421a
 
 name:           servant-test
 version:        0.1.0.0
@@ -33,7 +33,11 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
+    , servant-server
+    , wai
+    , warp
   default-language: Haskell2010
 
 executable servant-test-exe
@@ -66,5 +70,8 @@ test-suite servant-test-test
     , hspec
     , hspec-wai
     , hspec-wai-json
+    , servant-server
     , servant-test
+    , wai
+    , warp
   default-language: Haskell2010

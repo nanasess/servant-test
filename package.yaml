@@ -21,6 +21,10 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- aeson
+- servant-server
+- wai
+- warp
 
 library:
   source-dirs: src
@@ -35,10 +39,6 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - servant-test
-    - aeson
-    - servant-server
-    - wai
-    - warp
 
 tests:
   servant-test-test:
