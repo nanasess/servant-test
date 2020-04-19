@@ -35,6 +35,10 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - servant-test
+    - aeson
+    - servant-server
+    - wai
+    - warp
 
 tests:
   servant-test-test:
@@ -46,3 +50,7 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - servant-test
+    - hspec
+    - hspec-wai
+    - hspec-wai-json
+    - aeson
