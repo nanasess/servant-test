@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f7b3a123c4c7c1ff6ec5beea56a21e2c5fcab9b4b4c5ccce48261e24d3ae9e89
+-- hash: 4b2f6ffec16f32d76a34bbb2a3689caa1c07ee72edfcb654a77ca7cbcc178174
 
 name:           servant-test
 version:        0.1.0.0
@@ -28,6 +28,7 @@ source-repository head
 library
   exposed-modules:
       DataSource
+      Entity.Country
       Lib
   other-modules:
       Paths_servant_test
