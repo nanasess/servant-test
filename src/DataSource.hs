@@ -3,7 +3,7 @@
 module DataSource (
   connect
   -- , convTypes
-  , defineTable
+--   , defineTable
   ) where
 
 -- import           Data.Int                            (Int32)
@@ -23,15 +23,15 @@ connect = connectPostgreSQL "host=127.0.0.1 port=5432 user=postgres dbname=bruna
 -- convTypes :: [(String, TypeQ)]
 -- convTypes = [("MEDIUMINT", [t|Int32|])]
 
-defineTable :: String -> Q [Dec]
-defineTable tableName =
-  defineTableFromDB'
-  connect
-  defaultConfig
-  driverPostgreSQL
-  "public"
-  tableName
-  [''Show, ''Generic]
+-- defineTable :: String -> Q [Dec]
+-- defineTable tableName =
+--   defineTableFromDB'
+--   connect
+--   defaultConfig
+--   driverPostgreSQL
+--   "public"
+--   tableName
+--   [''Show, ''Generic]
 
 
 

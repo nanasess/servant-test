@@ -11,21 +11,16 @@ import           Database.HDBC.Record.Query      (runQuery')
 import           Database.HDBC.Schema.PostgreSQL (driverPostgreSQL)
 -- -- import           Database.Relational.Query
 import           Database.Relational.Query.Type  (relationalQuery)
-import           DataSource                      (connect, defineTable)
+import           DataSource                      (connect)
 import           GHC.Generics                    (Generic)
 
-$(defineTableFromDB
-  connect
-  driverPostgreSQL
-  "public"
-  "mtb_country"
-  [''Show, ''Generic])
+$(defineTableFromDB connect driverPostgreSQL "public" "mtb_country" [''Show, ''Generic])
 
-showAllCountries :: IO()
-showAllCountries = do
-  conn <- connect
-  countries <- runQuery' conn (relationalQuery mtbCountry) ()
-  mapM_ print countries
+-- showAllCountries :: IO()
+-- showAllCountries = do
+--   conn <- connect
+--   countries <- runQuery' conn (relationalQuery mtbCountry) ()
+--   mapM_ print countries
 
 main :: IO ()
 main = print "app"
